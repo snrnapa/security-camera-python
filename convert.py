@@ -9,7 +9,7 @@ output_directory = 'converted'  # 変換後のファイルを保存するディ�
 
 # h264ファイルをMP4に変換する関数
 def convert_h264_to_mp4(input_file, output_file):
-    command = ['ffmpeg', '-i', input_file, '-c:v', 'copy', output_file]
+    command = ['ffmpeg', '-i', input_file, '-c:v', 'libx264', '-preset' , 'veryfast' ,  '-loglevel', 'error', output_file]
     subprocess.run(command)
 
 # raw_movieディレクトリのすべてのファイルを変換
