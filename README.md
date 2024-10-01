@@ -1,3 +1,5 @@
+大家さんに頼まれて監視カメラの解析ツールを作成
+
 # security-camera-python
 
 ## getting started
